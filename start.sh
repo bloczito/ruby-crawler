@@ -10,9 +10,4 @@
 #    ruby main.rb
 
 
-docker run \
-    -it \
-    --name ruby-crawler \
-    -v "$PWD":/usr/src/app \
-    ruby-crawler
-    
+docker build -t ruby-crawler . && docker run --rm ruby-crawler

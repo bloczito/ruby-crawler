@@ -8,4 +8,8 @@ Ruby Crawler fetches and prints info about top rated games on Amazon
 docker build -t ruby-crawler . && docker run --rm ruby-crawler
 ```
 
+or
 
+```bash
+./start.sh
+```
