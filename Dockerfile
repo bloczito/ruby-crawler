@@ -7,4 +7,7 @@ WORKDIR /usr/src/app
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
-CMD "/bin/bash"
+COPY . .
+
+CMD ["ruby", "main.rb"]
+# CMD "/bin/bash"
